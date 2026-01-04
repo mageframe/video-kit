@@ -1,0 +1,108 @@
+.settings-popup {
+  background-color: rgba(30, 30, 30, 0.95);
+  backdrop-filter: blur(10px);
+  border-radius: 12px;
+  padding: 0.5rem;
+  min-width: 240px;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.4);
+  z-index: 100000;
+}
+
+.popup-option {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.75rem 1rem;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+  gap: 1rem;
+}
+
+.popup-option:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.option-left {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  flex: 1;
+}
+
+.option-left svg {
+  width: 20px;
+  height: 20px;
+  color: #ffffff;
+}
+
+.option-label {
+  font-size: 0.938rem;
+  color: #ffffff;
+  font-weight: 500;
+}
+
+.option-right {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.option-value {
+  font-size: 0.875rem;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.option-arrow {
+  font-size: 1.25rem;
+  color: rgba(255, 255, 255, 0.4);
+}
+
+/* Submenu */
+.submenu {
+  position: absolute;
+  right: 100%;
+  bottom: 0;
+  margin-right: 0.5rem;
+  background-color: rgba(30, 30, 30, 0.95);
+  backdrop-filter: blur(10px);
+  border-radius: 12px;
+  padding: 0.5rem;
+  min-width: 220px;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.4);
+  z-index: 100001;
+}
+
+.submenu-item {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 0.75rem 1rem;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+  position: relative;
+}
+
+.submenu-item:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.submenu-item svg {
+  width: 20px;
+  height: 20px;
+  color: #ffffff;
+}
+
+.submenu-item span:not(.checkmark) {
+  font-size: 0.938rem;
+  color: #ffffff;
+  flex: 1;
+}
+
+.checkmark {
+  font-size: 1rem;
+  color: #10b981;
+  margin-left: auto;
+}

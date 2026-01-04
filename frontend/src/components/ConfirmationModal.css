@@ -1,0 +1,8 @@
+.modal-btn-delete {
+  background-color: #ef4444;
+  color: white;
+}
+
+.modal-btn-delete:hover {
+  background-color: #dc2626;
+}

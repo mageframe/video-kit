@@ -1,0 +1,129 @@
+.image-gallery {
+  width: 140px;
+  background-color: var(--bg-primary);
+  border-right: 1px solid var(--border-color);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1rem 0.75rem;
+  gap: 1rem;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
+/* Upload button */
+.gallery-upload-btn {
+  width: 100px;
+  height: 100px;
+  border-radius: 12px;
+  border: 2px dashed var(--border-color);
+  background-color: var(--bg-tertiary);
+  color: var(--text-muted);
+  font-size: 2.5rem;
+  cursor: pointer;
+  transition: all 0.2s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  box-sizing: border-box;
+}
+
+.gallery-upload-btn:hover {
+  border-color: #6b7280;
+  background-color: var(--bg-tertiary);
+  color: var(--text-secondary);
+}
+
+/* Thumbnails container */
+.gallery-thumbnails {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  width: 100%;
+  align-items: center;
+}
+
+/* Individual thumbnail */
+.gallery-thumbnail {
+  width: 100px;
+  height: 100px;
+  border-radius: 12px;
+  overflow: hidden;
+  border: 2px solid var(--border-color);
+  background-color: var(--bg-tertiary);
+  cursor: pointer;
+  transition: all 0.2s;
+  flex-shrink: 0;
+  box-sizing: border-box;
+  position: relative;
+}
+
+.gallery-thumbnail:hover {
+  border-color: #9ca3af;
+  box-shadow: var(--shadow-md);
+}
+
+.gallery-thumbnail.selected {
+  border-color: var(--accent-primary);
+  border-width: 2px;
+  box-shadow: 0 0 0 1px var(--accent-primary);
+}
+
+.gallery-thumbnail img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  display: block;
+}
+
+/* Menu button on thumbnail */
+.gallery-menu-btn {
+  position: absolute;
+  top: 4px;
+  right: 4px;
+  width: 24px;
+  height: 24px;
+  border-radius: 4px;
+  border: none;
+  background-color: rgba(0, 0, 0, 0.6);
+  color: white;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transition: opacity 0.2s;
+  padding: 0;
+}
+
+.gallery-thumbnail:hover .gallery-menu-btn {
+  opacity: 1;
+}
+
+.gallery-menu-btn:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.gallery-menu-btn svg {
+  width: 16px;
+  height: 16px;
+  fill: white;
+}
+
+/* Responsive */
+@media (max-width: 1024px) {
+  .image-gallery {
+    width: 100%;
+    flex-direction: row;
+    border-right: none;
+    border-bottom: 1px solid var(--border-color);
+    padding: 0.75rem;
+    overflow-x: auto;
+    overflow-y: hidden;
+  }
+
+  .gallery-thumbnails {
+    flex-direction: row;
+  }
+}

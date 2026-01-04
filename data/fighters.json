@@ -1,0 +1,14 @@
+[
+  {
+    "id": "nova-gal-avatar",
+    "name": "Nova Gal",
+    "image": "/fighters/nova-gal-avatar.jpg",
+    "description": "Cosmic warrior with stellar powers"
+  },
+  {
+    "id": "samurai-santa",
+    "name": "Samurai Santa",
+    "image": "/fighters/samurai-santa.jpg",
+    "description": "Festive fighter with ancient warrior skills"
+  }
+]

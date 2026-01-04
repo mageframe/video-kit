@@ -1,0 +1,90 @@
+.app {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.main-container {
+  flex: 1;
+  display: flex;
+  gap: 0;
+  min-height: 0;
+  overflow: hidden;
+}
+
+/* Three-column layout: ImageGallery | InputPanel | OutputPanel */
+.image-gallery {
+  flex-shrink: 0;
+  height: 100%;
+  overflow-y: auto;
+}
+
+.input-panel-new {
+  flex-shrink: 0;
+  border-right: 1px solid var(--border-color);
+  overflow-y: auto;
+  height: 100%;
+}
+
+.output-panel-new {
+  flex: 1;
+  min-width: 0;
+  height: 100%;
+  overflow: hidden;
+}
+
+/* Bottom left controls */
+.bottom-controls {
+  position: fixed;
+  bottom: 2rem;
+  left: 2rem;
+  display: flex;
+  gap: 0.5rem;
+  z-index: 100;
+}
+
+.control-btn {
+  width: 40px;
+  height: 40px;
+  border-radius: 8px;
+  border: 1px solid var(--border-color);
+  background-color: var(--bg-card);
+  color: var(--text-secondary);
+  cursor: pointer;
+  transition: all 0.2s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.25rem;
+}
+
+.control-btn:hover {
+  border-color: transparent;
+  background-color: var(--bg-tertiary);
+}
+
+.control-btn svg {
+  width: 20px;
+  height: 20px;
+}
+
+/* Responsive layout */
+@media (max-width: 1024px) {
+  .main-container {
+    flex-direction: column;
+    height: auto;
+    overflow: visible;
+  }
+
+  .input-panel-new {
+    border-right: none;
+    border-bottom: 1px solid var(--border-color);
+  }
+
+  .bottom-controls {
+    bottom: 1rem;
+    left: 1rem;
+  }
+}
