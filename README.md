@@ -4,7 +4,7 @@
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
-A modern web application for generating AI-powered videos using the Kie.ai Sora 2 API. Transform your static images into dynamic video clips with a clean, intuitive interface.
+A minimal, high-speed web UI for generating video via the kie.ai API - designed for AI filmmakers and creators who care about staying in flow.
 
 ## Features
 
